@@ -14,6 +14,10 @@ router.post("/signup",userSignUpController);
 @User See Courses
 GET , Protected Route
 */
+
+
+
+
 router.get("/courses",userMiddleware,getCoursesController);
 
 /*

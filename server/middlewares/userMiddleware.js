@@ -16,10 +16,10 @@ export const userMiddleware = async (req,res,next) => {
         }
         else{
             res.json({
-                message : "User Doesn't Exist , sign up"
+                message : "Wrong Credentials or User Doesn't Exist , sign up"
             })
         }
     } catch (err) {
-
+        res.send("Error occured , try again");
     }
 }

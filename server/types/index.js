@@ -11,3 +11,8 @@ export const courseSchema = z.object({
     imageLink: z.string(),
     price: z.number()
 })
+
+export const adminSchema = z.object({
+    username: z.string().min(6),
+    password: z.string().min(6),
+})
